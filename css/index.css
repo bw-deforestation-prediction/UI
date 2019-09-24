@@ -113,10 +113,14 @@ video {
 }
 header {
   width: 100%;
+  height: 25%;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url("../img/main-header-3.jpg");
+  background-size: 275px;
+  color: #47bb51;
 }
 header .headerText {
   display: flex;
@@ -130,7 +134,7 @@ header .headerText .loginNav {
 header .headerText .loginNav a {
   margin-right: 10px;
   font-size: 14px;
-  color: #85dcb8;
+  color: #0a8334;
   text-decoration: none;
 }
 .menuNav a {
@@ -149,7 +153,7 @@ header .loginNav a:first-child {
 .btn {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.6rem;
-  background: #41b3a3;
+  background: #47bb51;
   padding: 8px 40px;
   border: 1px solid black;
   border-radius: 8px;
@@ -157,7 +161,7 @@ header .loginNav a:first-child {
   transition: 0.3s;
 }
 .btn:hover {
-  background-color: #85dcb8;
+  background-color: #0a8334;
   color: #b4b4b4;
 }
 .menuNav {
@@ -166,22 +170,20 @@ header .loginNav a:first-child {
   align-items: center;
   padding: 10px;
   text-decoration: none;
-  background: #85dcb8;
+  background: #47bb51;
 }
 * {
-  border: 1px solid red;
   box-sizing: border-box;
   outline: none;
 }
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  border: #41b3a3;
+  border: #47bb51;
 }
 body {
   background: #b4b4b4;
-  padding: 10px;
-  border: 5px #41b3a3;
+  border: 5px #0f3a1c;
   border-style: ridge;
 }
 h1,
@@ -200,13 +202,24 @@ h2 {
   font-size: 2rem;
 }
 /* h1, */
+.topContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.topContent img {
+  width: 95%;
+}
 .middleContent {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  align-content: flex-start;
+  height: 35%;
+  align-content: space-evenly;
   padding: 10px;
-  background: #85dcb8;
+  background: #0a8334;
 }
 .middleContent div.left {
   width: 48%;
@@ -217,7 +230,7 @@ h2 {
   padding: 10px;
   height: 100%;
 }
-.topContent {
+.bottomContent {
   display: flex;
   justify-content: center;
   align-items: center;

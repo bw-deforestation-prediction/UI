@@ -1,6 +1,5 @@
 
 * {
-	border: 1px solid red;
 	box-sizing: border-box;
 	outline: none;
 }
@@ -11,8 +10,7 @@ html {
 }
 body {
 	background: @bgColor;
-	padding: 10px;
-	border: 5px @secColor;
+	border: 5px @borderSec;
 	border-style: ridge;
 }
 
@@ -33,18 +31,29 @@ h2 {
 	font-size: 2rem
 }
 /* h1, */
+.topContent {
+	.displayFlex(center,center);
+	flex-direction: column;
+	padding: 15px;
+
+	img {
+		width: 95%;
+	}
+}
 
 .middleContent {
 	display: flex;
 	flex-flow: row nowrap;
 	width: 100%;
-	align-content: flex-start;
+	height: 35%;
+	align-content: space-evenly;
 	padding: 10px;
 	background: @mainColor;
 
 	div.left {
 		width: 48%;
 		padding: 10px;
+		
 	}
 	div.right {
 		width: 48%;
@@ -53,8 +62,8 @@ h2 {
 	}
 }
 
-.topContent {
-	.displayFlex(center,center);
+.bottomContent{
+	.displayFlex(center, center);
 	flex-direction: column;
 	padding: 15px;
 }
