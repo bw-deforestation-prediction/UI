@@ -5,9 +5,11 @@ header {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    background-image: url("../img/main-header-3.jpg");
-    background-size: 275px;
-    color: @secColor;
+    background-image: url("../img/main-header-5.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 
 	.headerText {
 		display: flex;
@@ -26,6 +28,20 @@ header {
 			}
 		}
 	}
+}
+header {
+    @media @mobile{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    }
+        h1{
+        @media @mobile{
+        text-align: center;
+        color:white;
+        font-weight:900;
+        }
+    }
 }
 .menuNav a {
 	text-decoration: none;

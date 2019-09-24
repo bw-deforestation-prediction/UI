@@ -14,22 +14,6 @@ body {
 	border-style: ridge;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: "Bangers", cursive;
-	letter-spacing: 1px;
-	margin-bottom: 15px;
-}
-
-h1 {
-	font-size: 3rem;
-}
-h2 {
-	font-size: 2rem
-}
 /* h1, */
 .topContent {
 	.displayFlex(center,center);
@@ -38,6 +22,7 @@ h2 {
 
 	img {
 		width: 95%;
+		padding-bottom: 15px;
 	}
 }
 
@@ -59,6 +44,14 @@ h2 {
 		width: 48%;
 		padding: 10px;
 		height: 100%;
+	}
+}
+
+.middleContent{
+	@media @mobile{
+		display: flex;
+		flex-direction: row;
+		height: 42%;
 	}
 }
 

@@ -111,6 +111,21 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2rem;
+}
 header {
   width: 100%;
   height: 25%;
@@ -118,9 +133,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../img/main-header-3.jpg");
-  background-size: 275px;
-  color: #47bb51;
+  background-image: url("../img/main-header-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 header .headerText {
   display: flex;
@@ -136,6 +153,20 @@ header .headerText .loginNav a {
   font-size: 14px;
   color: #0a8334;
   text-decoration: none;
+}
+@media (max-width: 331px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 331px) {
+  header h1 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+  }
 }
 .menuNav a {
   text-decoration: none;
@@ -153,7 +184,7 @@ header .loginNav a:first-child {
 .btn {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.6rem;
-  background: #47bb51;
+  background: #2fc73c;
   padding: 8px 40px;
   border: 1px solid black;
   border-radius: 8px;
@@ -170,7 +201,7 @@ header .loginNav a:first-child {
   align-items: center;
   padding: 10px;
   text-decoration: none;
-  background: #47bb51;
+  background: #2fc73c;
 }
 * {
   box-sizing: border-box;
@@ -179,27 +210,12 @@ header .loginNav a:first-child {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  border: #47bb51;
+  border: #2fc73c;
 }
 body {
   background: #b4b4b4;
   border: 5px #0f3a1c;
   border-style: ridge;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
 }
 /* h1, */
 .topContent {
@@ -211,6 +227,7 @@ h2 {
 }
 .topContent img {
   width: 95%;
+  padding-bottom: 15px;
 }
 .middleContent {
   display: flex;
@@ -229,6 +246,13 @@ h2 {
   width: 48%;
   padding: 10px;
   height: 100%;
+}
+@media (max-width: 331px) {
+  .middleContent {
+    display: flex;
+    flex-direction: row;
+    height: 42%;
+  }
 }
 .bottomContent {
   display: flex;
