@@ -1,7 +1,6 @@
 @import url(fontawesome-all.min.css);
 * {
   box-sizing: border-box;
-  background-color: aquamarine;
 }
 html {
   font-size: 62.5%;
@@ -141,23 +140,25 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-html {
-  box-sizing: border-box;
-  border: red;
-}
-body {
-  background: #7fa395;
-}
 * {
-  margin: 0;
-  padding: 0;
   border: 1px solid red;
   box-sizing: border-box;
   color: #333;
   outline: none;
 }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  border: red;
+}
+body {
+  background: #b4b4b4;
+  padding: 10px;
+  border: 5px #41b3a3;
+  border-style: ridge;
+}
 h1 {
-  font-size: 30px;
+  font-size: 3 rem;
 }
 h1,
 h2,
