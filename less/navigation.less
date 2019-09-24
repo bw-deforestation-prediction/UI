@@ -1,36 +1,61 @@
-// // Navigation code here
-// .topContent{
-//     .displayFlex(center, center);
-//     flex-direction: column;
-//     width: 85%;
-//     background-color: @wild-sand;
-//     margin: 0 auto;
-//     @media @mobile{
-//         width:100%;
+header {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-//     }
-//     nav{
-//         display:flex;
-//         width:75%;
-//         justify-content: space-evenly;
-//         font-size:1.6rem;
-//         margin-top: 10px;
-//         padding-bottom:10px;
-//         @media @mobile{
-//             width:100%;
-//         }
-//         .links{
-//             a {
-//                 text-decoration: none;
-//                 color:black;
-//                 padding-right:50px;
-//                 @media @mobile{
-//                     padding-right:25px;
-//                 }
-//             }
-//         }
-//     }
-// }   
-// h1{
-//     font-size: 4.0rem;
-// }
+	.headerText {
+		display: flex;
+
+		.loginNav {
+			display: flex;
+			width: 100%;
+			vertical-align: top;
+			margin-left: 150px;
+
+			a {
+				margin-right: 10px;
+				font-size: 14px;
+				color: @mainColor;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.menuNav a {
+	text-decoration: none;
+	color: black;
+}
+header .loginNav a:hover {
+	color: @bgColor;
+}
+header .loginNav a:first-child {
+	margin-left: 0;
+}
+.header .loginNav a:last-child {
+	margin-right: 0;
+}
+.btn {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.6rem;
+	background: @secColor;
+	padding: 8px 40px;
+	border: 1px solid black;
+	border-radius: 8px;
+	text-align: center;
+	transition: 0.3s;
+}
+.btn:hover {
+	background-color: @mainColor;
+	color: @bgColor;
+}
+
+.menuNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	text-decoration: none;
+	background: @mainColor;
+}

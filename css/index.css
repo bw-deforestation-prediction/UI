@@ -1,33 +1,4 @@
 @import url(fontawesome-all.min.css);
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: "Ubuntu", sans-serif;
-  color: #5E6164;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-  color: #23293B;
-}
-h2 {
-  font-size: 3.2rem;
-}
-h3 {
-  font-size: 2.8rem;
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: italic;
@@ -140,38 +111,8 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-* {
-  border: 1px solid red;
-  box-sizing: border-box;
-  color: #333;
-  outline: none;
-}
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-  border: red;
-}
-body {
-  background: #b4b4b4;
-  padding: 10px;
-  border: 5px #41b3a3;
-  border-style: ridge;
-}
-h1 {
-  font-size: 3 rem;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-/* h1, */
 header {
-  width: 97%;
+  width: 100%;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -182,18 +123,22 @@ header .headerText {
 }
 header .headerText .loginNav {
   display: flex;
-  width: 45%;
+  width: 100%;
   vertical-align: top;
   margin-left: 150px;
 }
 header .headerText .loginNav a {
   margin-right: 10px;
   font-size: 14px;
-  color: gray;
+  color: #85dcb8;
   text-decoration: none;
 }
+.menuNav a {
+  text-decoration: none;
+  color: black;
+}
 header .loginNav a:hover {
-  text-decoration: underline;
+  color: #b4b4b4;
 }
 header .loginNav a:first-child {
   margin-left: 0;
@@ -203,11 +148,17 @@ header .loginNav a:first-child {
 }
 .btn {
   font-family: "Titillium Web", sans-serif;
-  font-size: 12px;
-  background: lightblue;
+  font-size: 1.6rem;
+  background: #41b3a3;
   padding: 8px 40px;
   border: 1px solid black;
   border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #85dcb8;
+  color: #b4b4b4;
 }
 .menuNav {
   display: flex;
@@ -215,25 +166,63 @@ header .loginNav a:first-child {
   align-items: center;
   padding: 10px;
   text-decoration: none;
-  background: #044141;
+  background: #85dcb8;
 }
+* {
+  border: 1px solid red;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  border: #41b3a3;
+}
+body {
+  background: #b4b4b4;
+  padding: 10px;
+  border: 5px #41b3a3;
+  border-style: ridge;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+/* h1, */
 .middleContent {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
   align-content: flex-start;
   padding: 10px;
-  background: #008383;
-  padding-left: 60px;
+  background: #85dcb8;
 }
 .middleContent div.left {
-  width: 45%;
+  width: 48%;
   padding: 10px;
 }
 .middleContent div.right {
-  width: 45%;
+  width: 48%;
   padding: 10px;
   height: 100%;
+}
+.topContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
 }
 .contact .inner {
   display: flex;
