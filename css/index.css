@@ -278,9 +278,6 @@ body {
 .tenBoxes .row1 {
   display: flex;
   flex-flow: row wrap;
-  align-content: center;
-}
-.tenBoxes .row1 h3 {
-  height: 100px;
-  width: 100px;
+  align-content: space-between;
+  padding: 35px;
 }
