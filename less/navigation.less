@@ -5,11 +5,11 @@ header {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    background-image: url("../img/main-header-5.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../img/main-header-5.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color:@secColor;
 
 	.headerText {
 		display: flex;
@@ -38,11 +38,17 @@ header {
         h1{
         @media @mobile{
         text-align: center;
-        color:white;
+        color: @secColor;
         font-weight:900;
         }
     }
 }
+header {
+    h1:hover {
+            background-color: @secColor;
+            color: black;
+        }
+    }
 .menuNav a {
 	text-decoration: none;
 	color: black;
