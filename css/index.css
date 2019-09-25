@@ -291,7 +291,6 @@ body {
   flex-flow: row-reverse wrap;
   justify-content: space-around;
   padding: 15px;
-  border: 1px solid red;
   align-content: center;
 }
 @media (max-width: 500px) {
