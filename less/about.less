@@ -1,14 +1,33 @@
 .tenBoxes{
-    .row1{
     display:flex;
-    flex-flow: row wrap;
-    align-content:space-between;
-    padding: 35px;
-        .box1{
-        display: flex;
-        flex-flow: row wrap;
-        }
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    padding: 15px;
+    border: 1px solid red;
+    align-content: center;
+    @media @mobile {
+        flex-flow: column-reverse nowrap;
     }
+        .box{
+            width: 32%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-variant: small-caps;
+            padding-bottom: 8px;
+            @media @mobile {
+                width: 100%;
+                font-size: 1.6rem
+            }
+                img{
+                    border-radius: 100px;
+                    object-fit: contain;
+                    @media @mobile {
+                        border-radius: 180px;
+                        width: 100%;
+                    }
+                }
 
-    
+        }
 }
+
