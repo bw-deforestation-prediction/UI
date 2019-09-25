@@ -281,3 +281,7 @@ body {
   align-content: space-between;
   padding: 35px;
 }
+.tenBoxes .row1 .box1 {
+  display: flex;
+  flex-flow: row wrap;
+}
