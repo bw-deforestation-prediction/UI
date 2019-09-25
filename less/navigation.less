@@ -3,7 +3,7 @@ header {
     height: 25%;
 	margin-top: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../img/main-header-5.jpg");
     background-position:center;
@@ -11,22 +11,22 @@ header {
     background-size: cover;
     color:@secColor;
 
-	.headerText {
-		display: flex;
-
-		.loginNav {
+		.headerText {
 			display: flex;
-			width: 100%;
-			vertical-align: top;
-			margin-left: 150px;
 
-			a {
-				margin-right: 10px;
-				color: @mainColor;
-				text-decoration: none;
-			}
+				.loginNav {
+					display: flex;
+					width: 100%;
+					vertical-align: top;
+					margin-left: 150px;
+
+						a {
+							margin-right: 10px;
+							color: @mainColor;
+							text-decoration: none;
+						}
+				}
 		}
-	}
 }
 header {
     @media @mobile{
@@ -50,10 +50,11 @@ header {
     }
 .menuNav {
 	font-size:1.6rem;
-	a {
-	text-decoration: none;
-	color: black;
-	}
+	display: flex;
+		a {
+			text-decoration: none;
+			color: black;
+		}
 }
 header .loginNav a:hover {
 	color: @bgColor;
@@ -81,7 +82,7 @@ header .loginNav a:first-child {
 
 .menuNav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	padding: 10px;
 	text-decoration: none;
