@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    height: 25%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../img/main-header-5.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:@secColor;
+
+		.headerText {
+			display: flex;
+
+		.loginNav {
+			display: flex;
+			width: 100%;
+			vertical-align: top;
+			margin-left: 150px;
+
+				a {
+					margin-right: 10px;
+					color: @mainColor;
+					text-decoration: none;
+				}
+				}
+		}
+}
+header {
+    @media @mobile{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    }
+        h1{
+        @media @mobile{
+        text-align: center;
+        color: @secColor;
+        font-weight:900;
+        }
+    }
+}
+header {
+    h1:hover {
+            background-color: @secColor;
+            color: orangered;
+        }
+    }
+.menuNav {
+	font-size:1.6rem;
+	display: flex;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+}
+header .loginNav a:hover {
+	color: @bgColor;
+}
+header .loginNav a:first-child {
+	margin-left: 0;
+}
+.header .loginNav a:last-child {
+	margin-right: 0;
+}
+.btn {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.6rem;
+	background: @secColor;
+	padding: 8px 40px;
+	border: 1px solid black;
+	border-radius: 8px;
+	text-align: center;
+	transition: 0.3s;
+}
+.btn:hover {
+	background-color: @mainColor;
+	color: @bgColor;
+}
+
+.menuNav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	text-decoration: none;
+	background: @secColor;
+}

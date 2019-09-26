@@ -1,0 +1,324 @@
+@import url(fontawesome-all.min.css);
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3,
+h4 {
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  h3,
+  h4 {
+    font-size: 2rem;
+  }
+}
+header {
+  width: 100%;
+  height: 25%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../img/main-header-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2fc73c;
+}
+header .headerText {
+  display: flex;
+}
+header .headerText .loginNav {
+  display: flex;
+  width: 100%;
+  vertical-align: top;
+  margin-left: 150px;
+}
+header .headerText .loginNav a {
+  margin-right: 10px;
+  color: #0a8334;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    text-align: center;
+    color: #2fc73c;
+    font-weight: 900;
+  }
+}
+header h1:hover {
+  background-color: #2fc73c;
+  color: orangered;
+}
+.menuNav {
+  font-size: 1.6rem;
+  display: flex;
+}
+.menuNav a {
+  text-decoration: none;
+  color: black;
+}
+header .loginNav a:hover {
+  color: #b4b4b4;
+}
+header .loginNav a:first-child {
+  margin-left: 0;
+}
+.header .loginNav a:last-child {
+  margin-right: 0;
+}
+.btn {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.6rem;
+  background: #2fc73c;
+  padding: 8px 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #0a8334;
+  color: #b4b4b4;
+}
+.menuNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  background: #2fc73c;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background: #b4b4b4;
+  border: 5px #0f3a1c;
+  border-style: ridge;
+}
+/* h1, */
+.topContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.topContent img {
+  width: 95%;
+  padding-bottom: 15px;
+}
+.middleContent {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-content: space-evenly;
+  padding: 10px;
+  background: #0a8334;
+}
+.middleContent div.left {
+  width: 48%;
+  padding: 10px;
+}
+.middleContent div.right {
+  width: 48%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .middleContent {
+    display: flex;
+    flex-direction: row;
+    height: 42%;
+  }
+}
+.bottomContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.contact .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  align-content: flex-start;
+  padding: 25px;
+}
+.tenBoxes {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  padding: 15px;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .tenBoxes {
+    flex-flow: column-reverse nowrap;
+  }
+}
+.tenBoxes .box {
+  width: 32%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-variant: small-caps;
+  padding-bottom: 8px;
+}
+@media (max-width: 500px) {
+  .tenBoxes .box {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+.tenBoxes .box img {
+  border-radius: 100px;
+  object-fit: contain;
+}
+@media (max-width: 500px) {
+  .tenBoxes .box img {
+    border-radius: 180px;
+    width: 100%;
+  }
+}
